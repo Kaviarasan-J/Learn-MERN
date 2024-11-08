@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Mern</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css-->
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand fw-bold">
+                        <span class="badge text-bg-success text-dark fw-bold animate-letter">M</span>
+                        <span class="badge text-bg-danger text-dark fw-bold animate-letter">E</span>
+                        <span class="badge text-bg-info text-dark fw-bold animate-letter">R</span>
+                        <span class="badge text-bg-warning fw-bold animate-letter">N</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar"
+                        aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="myNavBar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#Courses" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Courses
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#html">Html</a></li>
+                                    <li><a class="dropdown-item" href="#css">Css</a></li>
+                                    <li><a class="dropdown-item" href="#js">Javascript</a></li>
+                                    <li><a class="dropdown-item" href="#python">Python</a></li>
+                                    <li><a class="dropdown-item" href="#mongo">MongoDB</a></li>
+                                    <li><a class="dropdown-item" href="#express">Express JS</a></li>
+                                    <li><a class="dropdown-item" href="#react">React JS</a></li>
+                                    <li><a class="dropdown-item" href="#node">Node.js</a></li>
+                                    <li><a class="dropdown-item" href="#git">Git & GitHub</a></li>
+                                    <li><a class="dropdown-item" href="#boot">Bootstrap</a></li>
+                                    <li><a class="dropdown-item" href="#sql">MySQL</a></li>
+                                    <li><a class="dropdown-item" href="#aws">AWS Cloud</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        </ul>
+                        <!-- Search Form with Category Dropdown -->
+                        <form class="d-flex" id="searchForm">
+                            <select id="searchCategory" class="form-select me-2" aria-label="Search Category">
+                                <option value="all" selected>All Categories</option>
+                                <option value="frontend">Frontend</option>
+                                <option value="backend">Backend</option>
+                                <option value="database">Database</option>
+                                <option value="cloud">Cloud</option>
+                            </select>
+                            <input id="searchInput" class="form-control me-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron" id="About">
+            <div class="container mt-1">
+                <div class="row align-items-center">
+                    <div class="col-md-8 ml-auto">
+                        <div class="display-4 mt-2">Hello <span class="text-warning fw-bold fs-1 animate-coder">Coder!</span></div>
+                        <div class="lead ">
+                            Welcome to Learn Again
+                            <i class="fa-regular fa-face-smile-beam"></i> ...
+                            <p class="mt-1 fs-6">
+                                MERN Stack is a powerful collection of JavaScript technologies ( <span
+                                    class="badge text-bg-success">MongoDB</span> , <span
+                                    class="badge text-bg-dark">Express.js</span> , <span
+                                    class="badge text-bg-primary">React
+                                    JS</span> , <span class="badge text-bg-warning">Node.js</span> )
+                                used for developing scalable full-stack web applications efficiently.
+                            </p>
+                            <button class="btn btn-outline-danger mb-4">Visit us <i
+                                    class="fa-regular fa-bookmark"></i></button>
+                        </div>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Lets Code!</strong> A machine that turns coffee into code <i
+                                class="fa-brands fa-js"></i>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://www.webstackacademy.com/wp-content/uploads/2023/01/fullStack-MERN.png" alt="stack"
+                            srcset="" class="img-fluid rounded">
+                    </div>
+                </div>
+                <hr class="mt-5 mb-3">
+            </div>
+        </div>
+
+
+        <!-- Display Items (Replaceable Content Based on Search) -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col">
+                    <h1 class="fw-bold fs-3 mb-4">List of <span class="text-danger">Courses</span>
+                       </h1>
+                </div>
+            </div>
+            <ul id="itemList" class="list-group">
+                <li class="list-group-item" data-category="frontend"><a href="#html" class="text-decoration-none text-dark">HTML</a></li>
+                <li class="list-group-item" data-category="frontend"><a href="#css" class="text-decoration-none text-dark">CSS</a></li>
+                <li class="list-group-item" data-category="frontend"><a href="#js" class="text-decoration-none text-dark">JavaScript</a></li>
+                <li class="list-group-item" data-category="backend"><a href="#node" class="text-decoration-none text-dark">Node.js</a></li>
+                <li class="list-group-item" data-category="backend"><a href="#express" class="text-decoration-none text-dark">Express.js</a></li>
+                <li class="list-group-item" data-category="database"><a href="#mongo" class="text-decoration-none text-dark">MongoDB</a></li>
+                <li class="list-group-item" data-category="database"><a href="#sql" class="text-decoration-none text-dark">MySQL</a></li>
+                <li class="list-group-item" data-category="frontend"><a href="#react" class="text-decoration-none text-dark">React.js</a></li>
+                <li class="list-group-item" data-category="cloud"><a href="#aws" class="text-decoration-none text-dark">AWS Cloud</a></li>
+                <li class="list-group-item" data-category="backend"><a href="#git" class="text-decoration-none text-dark">Git & GitHub</a></li>
+                <li class="list-group-item" data-category="frontend"><a href="#boot" class="text-decoration-none text-dark">Bootstrap</a></li>
+            </ul>
+            <hr class="mt-3">
+        </div>
+
+        <div class="container my-5" id="Courses">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 mb-3" id="html" >
+                    <div class="card">
+                        <img src="https://media.licdn.com/dms/image/v2/C4E12AQES2SPbxCQi9w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1590410787863?e=2147483647&v=beta&t=DYi7hOnGiTyVVXBjnCmUiMPPzQJwfJ1Lw68scOZd6Ko"
+                            alt="html" srcset="" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn Html</h4>
+                            <span class="badge text-bg-primary">web development</span>
+                            <span class="badge text-bg-danger">html</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-danger" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.w3schools.com/html/html_images.asp"
+                                class="text-decoration-none text-dark" target="_blank">Learn Now</a> <i
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 " id="css">
+                    <div class="card mb-3">
+                        <img src="https://i.ytimg.com/vi/uOltiFI00rU/maxresdefault.jpg" alt="express" srcset=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn CSS</h4>
+                            <span class="badge text-bg-info">stylesheet</span>
+                            <span class="badge text-bg-primary">CSS</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-primary text-white" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.w3schools.com/css/default.asp" class="text-decoration-none text-dark"
+                                target="_blank">Learn Now</a> <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 " id="js">
+                    <div class="card mb-3">
+                        <img src="https://media.licdn.com/dms/image/D4E12AQFfe1nZbaWdMw/article-cover_image-shrink_720_1280/0/1698604163003?e=2147483647&v=beta&t=rtD52hfy37nFVmc4_MXfnflV6C-ke773W70SYJLoWRc"
+                            alt="Reactjs" srcset="" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn Javascript</h4>
+                            <span class="badge text-bg-danger">dynamic</span>
+                            <span class="badge text-bg-warning">javascript</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-warning" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+                                class="text-decoration-none text-dark">Learn Now</a> <i
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 mb-3" id="python">
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/ix9cRaBkVe0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC7lm7YGt5bE2Sc6ecVvZzQ9JxOhw"
+                            alt="node" srcset="" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn Python</h4>
+                            <span class="badge text-bg-primary">backend</span>
+                            <span class="badge text-bg-warning">python</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-primary" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.w3schools.com/python/default.asp" target="_blank"
+                                class="text-decoration-none text-dark">Learn Now</a> <i
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3" id="mongo">
+                    <div class="card">
+                        <img src="https://dotnettrickscloud.blob.core.windows.net/article/3720240725105456.png"
+                            alt="MongoDB" srcset="" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn MongoDB</h4>
+                            <span class="badge text-bg-primary">Database</span>
+                            <span class="badge text-bg-success">MongoDB</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-success" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.mongodb.com/" target="_blank"
+                                class="text-decoration-none text-dark">Learn Now</a> <i
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 " id="express">
+                    <div class="card mb-3">
+                        <img src="https://cdn.ourcodeworld.com/public-media/articles/articleocw-57e57b89889ad.png"
+                            alt="express" srcset="" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn Express JS</h4>
+                            <span class="badge text-bg-warning">javascript</span>
+                            <span class="badge text-bg-success">Express JS</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-dark text-white" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://expressjs.com/" target="_blank"
+                                class="text-decoration-none text-dark">Learn Now</a> <i
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 " id="react">
+                    <div class="card mb-3">
+                        <img src="https://media.licdn.com/dms/image/C4E12AQFdVr18zUa17Q/article-cover_image-shrink_720_1280/0/1624637761724?e=2147483647&v=beta&t=txL8oZw9vpsEAev7vCuRj8GQpDmbmG9FMUnRDtRzXaY"
+                            alt="Reactjs" srcset="" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn React JS</h4>
+                            <span class="badge text-bg-primary">web development</span>
+                            <span class="badge text-bg-info">React JS</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-info" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://react.dev/" target="_blank" class="text-decoration-none text-dark">Learn
+                                Now</a> <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 " id="node">
+                    <div class="card mb-3">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQF1btzrvx64aQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1698242399109?e=2147483647&v=beta&t=_V-6ub-4NLvaWr2Nmoj4IhUoIP4QyrUTx-GBQXWXQQs"
+                            alt="Reactjs" srcset="" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn NOde.js</h4>
+                            <span class="badge text-bg-warning">javascript</span>
+                            <span class="badge text-bg-success">Node.js</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-success" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://nodejs.org/en" target="_blank" class="text-decoration-none text-dark">Learn
+                                Now</a> <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 mb-3" id="git">
+                    <div class="card">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*mtsk3fQ_BRemFidhkel3dA.png" alt="node"
+                            srcset="" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn Git & GitHub</h4>
+                            <span class="badge text-bg-danger">Git</span>
+                            <span class="badge text-bg-dark">Github</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-dark" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources"
+                                target="_blank" class="text-decoration-none text-dark">Learn Now</a> <i
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3" id="boot">
+                    <div class="card">
+                        <img src="https://cdn-fnplo.nitrocdn.com/TNwzUayTjddwIyaEAePQvCwBPsXfOqXj/assets/images/optimized/rev-ee381ae/www.n-school.com/wp-content/uploads/2023/11/What-is-Bootstrap.png"
+                            alt="node" srcset="" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn Bootstrap</h4>
+                            <span class="badge text-bg-primary">stylesheet</span>
+                            <span class="badge text-bg-danger">Bootstrap</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-danger" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://getbootstrap.com/" target="_blank"
+                                class="text-decoration-none text-dark">Learn Now</a> <i
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3" id="sql">
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/ER8oKX5myE0/maxresdefault.jpg" alt="node" srcset=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn MySQL</h4>
+                            <span class="badge text-bg-info">database</span>
+                            <span class="badge text-bg-warning">MySQL</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-warning" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.w3schools.com/MySQL/default.asp" target="_blank"
+                                class="text-decoration-none text-dark">Learn Now</a> <i
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3" id="aws">
+                    <div class="card">
+                        <img src="https://images.prismic.io/qovery/064f78be-709a-4781-9af5-29856902243a_Top%205%20AWS%20Services%20Every%20Developer%20Should%20know%20(1).jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max"
+                            alt="node" srcset="" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Learn aws cloud</h4>
+                            <span class="badge text-bg-warning">cloud</span>
+                            <span class="badge text-bg-danger">aws</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo aliquam distinctio
+                                corrupti nam, iusto dolores quasi veritatis culpa? Culpa.</p>
+                            <div class="d-grid">
+                                <button class="btn btn-danger" type="button">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=categories%23compute&trk=fb8718a7-d9f7-4e07-9fc5-b85de26b4178&sc_channel=ps&ef_id=CjwKCAjw-JG5BhBZEiwAt7JR68wyGf6ug0AVfOjSD3QwGdx0l6Nxs3QrtaPwohmS5YVN3NTNGyH5GRoCrOkQAvD_BwE:G:s&s_kwcid=AL!4422!3!476942607514!p!!g!!aws%20digital%20cloud!11542865500!116152064567&gclid=CjwKCAjw-JG5BhBZEiwAt7JR68wyGf6ug0AVfOjSD3QwGdx0l6Nxs3QrtaPwohmS5YVN3NTNGyH5GRoCrOkQAvD_BwE"
+                                class="text-decoration-none text-dark">Learn Now</a> <i target="_blank"
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="mt-5 mb-3">
+        </div>
+
+        <footer class="text-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- About Section -->
+                    <div class="col-md-4 mb-3">
+                        <h5>About Us</h5>
+                        <p class="small">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ut dolorum harum nemo distinctio.
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="col-md-4 mb-3 ">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                            <li><a href="#About" class="text-dark text-decoration-none">About</a></li>
+                            <li><a href="#About" class="text-dark text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Information -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Contact Us</h5>
+                        <p class="small">
+                            Email: you@gmail.com<br>
+                            Phone: +123 456 7890
+                        </p>
+                        <div>
+                            <a href="#" class="text-dark me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-3 small">
+                    &copy; 2024 Your Website | All Rights Reserved
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+        <!-- js -->
+         <script src="js/main.js"></script>
+    </body>
+
+</html>
+</body>
+
+</html>
