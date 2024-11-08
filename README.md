@@ -49,4 +49,4 @@ You can see the project live in action here:
 ## ✍️ **Author**
 - **Name**: Kaviarsan J  
 - **LinkedIn**: [Kaviarsan J](https://www.linkedin.com/in/kaviarsan-j/)  
-- **GitHub**: [@your-username](https://github.com/Kaviarasan-J)
+- **GitHub**: [Kaviarasan-J](https://github.com/Kaviarasan-J)
